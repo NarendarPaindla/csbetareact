@@ -15,7 +15,7 @@ return(
 <h1>Welcome</h1>
 <p>Here {name} is learning {course}</p>
 <ul>
-  {items.map(item=><li key={item}>{item}</li>)}
+  {items.map(item=><li key={item}>{item}</li>)} 
 </ul>
 <Counter/>
 </>
