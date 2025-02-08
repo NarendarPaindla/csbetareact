@@ -3,6 +3,7 @@ import './App.css'
 import Greetings from './components/Greetings';
 import Counter from './components/Counter';
 import MouseEventDemo from './components/MoueEventsDemo';
+import KeyboardEventsDemo from './components/KeyboardEventsDemo';
 
 function App(){
   const name="iotalpha";
@@ -20,6 +21,7 @@ return(
 </ul>
 <Counter/> */}
 <MouseEventDemo/>
+<KeyboardEventsDemo/>
 </>
 );
 }
