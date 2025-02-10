@@ -1,31 +1,27 @@
-import Header from './components/Header';
-import './App.css'
-import Greetings from './components/Greetings';
-import Counter from './components/Counter';
-import MouseEventDemo from './components/MoueEventsDemo';
-import KeyboardEventsDemo from './components/KeyboardEventsDemo';
-import DragAndDropDemo from './components/DragAndDropDemo';
+import React from "react";
+import contacts from "./contacts";
+import Card from "./Card";
+import './style.css'
+function addCard(contact) {
+  return (
+    <Card
+      key={contact.id}
+      name={contact.name}
+      img={contact.imgURL}
+      phone={contact.phone}
+      email={contact.email}
+      company={contact.company}
+    />
+  );
+}
 
-function App(){
-  const name="iotalpha";
-  const course="react";
-  const items=['item1','item2', 'item3','item4'];
-  
-return(
-<>
-{/* <Greetings/>
-<Header name={name} />
-<h1>Welcome</h1>
-<p>Here {name} is learning {course}</p>
-<ul>
-  {items.map(item=><li key={item}>{item}</li>)} 
-</ul>
-<Counter/> */}
-<MouseEventDemo/>
-<KeyboardEventsDemo/>
-<DragAndDropDemo/>
-</>
-);
+function App() {
+  return (
+    <div className="cardcontainer">
+      <h1 className="heading">My Contacts</h1>
+      <>{contacts.map(addCard)}</>
+    </div>
+  );
 }
 
 export default App;
