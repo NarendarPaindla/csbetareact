@@ -1,14 +1,12 @@
 import React from 'react'
-import UseEffectDependencies from './components/UseEffectDependencies';
-import Parent from './components/Parent';
-import Child from './components/Child';
-import MyForm from './components/MyForm';
+
+import MyFormTwo from './components/MyFormTwo';
 function App(){
   return(
-    <>
-  <MyForm/>
  
-    </>
+  <MyFormTwo/>
+ 
+  
   )
 }
 export default App;
